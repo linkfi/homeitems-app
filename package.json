@@ -1,0 +1,49 @@
+{
+  "name": "homeitems-app",
+  "version": "1.0.0",
+  "description": "React App for HomeItems ",
+  "main": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "prebuild": "run-s clean lint",
+    "build": "parcel build index.html --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "run-s lint:code",
+    "lint:code": "eslint app/ --ext .js --ext .jsx --fix",    
+    "clean": "rimraf ./dist"
+  },
+  "keywords": [
+    "React",
+    "App",
+    "for",
+    "HomeItems"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.0.0-rc.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-rc.0",
+    "redux-devtools-extension": "^2.13.9",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
+    "axios": "^0.22.0",
+    "bootstrap": "^5.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0"
+  }
+}
